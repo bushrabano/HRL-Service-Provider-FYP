@@ -1,0 +1,36 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Review Provider | HRL Services</title><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"></head><body><header class="navbar">
+  <div class="nav-inner">
+    <a class="logo" href="index.html"><i class="fa-solid fa-house-chimney"></i> HRL Services</a>
+    <button class="menu-toggle" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></button>
+    <nav id="navMenu">
+      <a href="index.html">Home</a>
+      <div class="nav-dropdown">
+        <a class="services-link" href="services.html">Services <i class="fa-solid fa-chevron-down"></i></a>
+        <div class="dropdown-menu"><a href="services/plumbing.html"><i class="fa-solid fa-faucet-drip"></i> Plumbing</a>
+<a href="services/electrician.html"><i class="fa-solid fa-bolt"></i> Electrician</a>
+<a href="services/cleaning.html"><i class="fa-solid fa-broom"></i> Cleaning</a>
+<a href="services/painter.html"><i class="fa-solid fa-paint-roller"></i> Painter</a>
+<a href="services/car-repair.html"><i class="fa-solid fa-car"></i> Car Repair</a>
+<a href="services/care-services.html"><i class="fa-solid fa-hand-holding-heart"></i> Care Services</a>
+<a href="services/tutor.html"><i class="fa-solid fa-chalkboard-user"></i> Tutor</a>
+<a href="services/it-support.html"><i class="fa-solid fa-laptop-code"></i> IT Support</a></div>
+      </div>
+      <a href="booking.html">Booking</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html">Login</a>
+      <a class="provider-nav" href="provider-register.html">Become a Provider</a>
+    </nav>
+  </div>
+</header><main class="provider-page"><div class="provider-container"><div class="page-title"><h1>Provider Verification Review</h1><p>Check the provider information and uploaded documents before making a decision.</p></div><div class="review-layout"><div class="provider-card"><div class="provider-profile"><img class="provider-avatar" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80"><h2>Ali Khan</h2><span class="status pending">Pending Verification</span></div><hr><p><strong>Phone:</strong> 0300-1234567</p><p><strong>Email:</strong> ali@example.com</p><p><strong>CNIC:</strong> 35202-1234567-1</p><p><strong>Service:</strong> Electrician</p><p><strong>Experience:</strong> 5 Years</p><p><strong>Address:</strong> Main City, Pakistan</p><p><strong>Skills:</strong> Wiring, switch installation, fault finding, maintenance.</p></div><div class="provider-card"><h2>Documents</h2><div class="document-box"><h3>CNIC Front</h3><p>Uploaded document preview</p><div class="notice info">CNIC document will be displayed here after upload.</div></div><br><div class="document-box"><h3>CNIC Back</h3><p>Uploaded document preview</p><div class="notice info">CNIC document will be displayed here after upload.</div></div><br><div class="document-box"><h3>Certificate</h3><p>Optional professional certificate</p><div class="notice info">Certificate will be displayed here if uploaded.</div></div><div class="provider-actions"><button class="btn btn-success" onclick="approve()">✓ Approve Provider</button><button class="btn btn-danger" onclick="reject()">✕ Reject</button><a class="btn btn-outline" href="admin-dashboard.html">Back</a></div><div id="result"></div></div></div></div></main><footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-col footer-about">
+      <h3><i class="fa-solid fa-house-chimney"></i> HRL Services</h3>
+      <p>HRL Service Provider is a local services marketplace that helps customers find reliable professionals for everyday needs.</p>
+      <div class="social-links"><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a><a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a><a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a></div>
+    </div>
+    <div class="footer-col"><h4>Quick Links</h4><a href="index.html">Home</a><a href="services.html">All Services</a><a href="booking.html">Booking</a><a href="contact.html">Contact</a><a href="login.html">Login</a></div>
+    <div class="footer-col"><h4>Our Services</h4><a href="services/plumbing.html">Plumbing</a><a href="services/electrician.html">Electrician</a><a href="services/cleaning.html">Cleaning</a><a href="services/painter.html">Painter</a><a href="services/car-repair.html">Car Repair</a><a href="services/care-services.html">Care Services</a><a href="services/tutor.html">Tutor</a><a href="services/it-support.html">IT Support</a></div>
+    <div class="footer-col"><h4>Provider</h4><a href="provider-register.html">Become a Provider</a><a href="provider-login.html">Provider Login</a><a href="provider-dashboard.html">Provider Dashboard</a><a href="verification-status.html">Verification Status</a><h4 class="footer-contact-title">Contact Us</h4><p><i class="fa-solid fa-phone"></i> +92 300 1234567</p><p><i class="fa-solid fa-envelope"></i> support@hrlservices.com</p><p><i class="fa-solid fa-location-dot"></i> Pakistan</p></div>
+  </div>
+  <div class="footer-bottom"><p>© 2026 HRL Services. All Rights Reserved.</p><span>Trusted Local Services • Professional Providers • Easy Booking</span></div>
+</footer><script>function approve(){localStorage.setItem('providerStatus','approved');document.getElementById('result').innerHTML='<div class="notice success">Provider approved successfully. Verified badge will now appear on the provider profile.</div>'}function reject(){localStorage.setItem('providerStatus','rejected');document.getElementById('result').innerHTML='<div class="notice error">Provider application has been rejected. The provider must update the application.</div>'}</script></body></html>

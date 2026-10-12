@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Become a Provider | HRL Services</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<header class="navbar">
+    <div class="nav-inner">
+
+        <a class="logo" href="index.html">
+            <i class="fa-solid fa-house-chimney"></i>
+            HRL Services
+        </a>
+
+        <button class="menu-toggle" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <nav id="navMenu">
+
+            <a href="index.html">Home</a>
+
+            <div class="nav-dropdown">
+
+                <a class="services-link" href="services.html">
+                    Services
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
+
+                <div class="dropdown-menu">
+
+                    <a href="services/plumbing.html">
+                        <i class="fa-solid fa-faucet-drip"></i> Plumbing
+                    </a>
+
+                    <a href="services/electrician.html">
+                        <i class="fa-solid fa-bolt"></i> Electrician
+                    </a>
+
+                    <a href="services/cleaning.html">
+                        <i class="fa-solid fa-broom"></i> Cleaning
+                    </a>
+
+                    <a href="services/painter.html">
+                        <i class="fa-solid fa-paint-roller"></i> Painter
+                    </a>
+
+                    <a href="services/car-repair.html">
+                        <i class="fa-solid fa-car"></i> Car Repair
+                    </a>
+
+                    <a href="services/care-services.html">
+                        <i class="fa-solid fa-hand-holding-heart"></i> Care Services
+                    </a>
+
+                    <a href="services/tutor.html">
+                        <i class="fa-solid fa-chalkboard-user"></i> Tutor
+                    </a>
+
+                    <a href="services/it-support.html">
+                        <i class="fa-solid fa-laptop-code"></i> IT Support
+                    </a>
+
+                </div>
+            </div>
+
+            <a href="booking.html">Booking</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html">Login</a>
+
+            <a class="provider-nav" href="provider-register.html">
+                Become a Provider
+            </a>
+
+        </nav>
+    </div>
+</header>
+
+
+<main class="provider-page">
+
+    <div class="provider-container">
+
+        <div class="page-title">
+            <h1>Become a Service Provider</h1>
+
+            <p>
+                Register your professional profile and submit your documents
+                for verification.
+            </p>
+        </div>
+
+
+        <div class="provider-card">
+
+            <form id="providerRegisterForm"
+                  class="provider-form"
+                  enctype="multipart/form-data">
+
+                <div>
+                    <label>Full Name *</label>
+                    <input
+                        required
+                        name="full_name"
+                        placeholder="Enter your full name">
+                </div>
+
+
+                <div>
+                    <label>Phone Number *</label>
+                    <input
+                        required
+                        name="phone"
+                        placeholder="03XX-XXXXXXX">
+                </div>
+
+
+                <div>
+                    <label>Email *</label>
+                    <input
+                        required
+                        type="email"
+                        name="email"
+                        placeholder="you@example.com">
+                </div>
+
+
+                <div>
+                    <label>CNIC Number *</label>
+                    <input
+                        required
+                        name="cnic"
+                        placeholder="XXXXX-XXXXXXX-X">
+                </div>
+
+
+                <div>
+                    <label>Service Category *</label>
+
+              
+<select name="service" id="service" required>
+
+    <option value="">Select Service</option>
+
+    <option value="Plumbing">Plumbing</option>
+
+    <option value="Electrician">Electrician</option>
+
+    <option value="Cleaning">Cleaning</option>
+
+    <option value="Painter">Painter</option>
+
+    <option value="Car Repair">Car Repair</option>
+
+    <option value="Care Services">Care Services</option>
+
+    <option value="Tutor">Tutor</option>
+
+    <option value="IT Support">IT Support</option>
+
+</select>
+
+
+                </div>
+
+
+                <div>
+                    <label>Experience *</label>
+
+                    <input
+                        required
+                        name="experience"
+                        placeholder="e.g. 5 years">
+                </div>
+
+
+                <div>
+                    <label>Password *</label>
+
+                    <input
+                        required
+                        type="password"
+                        name="password"
+                        placeholder="Create password">
+                </div>
+
+
+                <div>
+                    <label>Confirm Password *</label>
+
+                    <input
+                        required
+                        type="password"
+                        name="confirm_password"
+                        placeholder="Confirm password">
+                </div>
+
+
+                <div class="full">
+
+                    <label>Address *</label>
+
+                    <input
+                        required
+                        name="address"
+                        placeholder="Enter your complete address">
+
+                </div>
+
+
+                <div class="full">
+
+                    <label>Skills *</label>
+
+                    <textarea
+                        required
+                        name="skills"
+                        placeholder="Describe your skills and services"></textarea>
+
+                </div>
+
+
+                <div>
+
+                    <label>Profile Picture</label>
+
+                    <input
+                        type="file"
+                        accept="image/*"
+                        name="profile_picture">
+
+                </div>
+
+
+                <div>
+
+                    <label>CNIC Front</label>
+
+                    <input
+                        type="file"
+                        accept="image/*,.pdf"
+                        name="cnic_front">
+
+                </div>
+
+
+                <div>
+
+                    <label>CNIC Back</label>
+
+                    <input
+                        type="file"
+                        accept="image/*,.pdf"
+                        name="cnic_back">
+
+                </div>
+
+
+                <div>
+
+                    <label>Certificate (Optional)</label>
+
+                    <input
+                        type="file"
+                        accept="image/*,.pdf"
+                        name="certificate">
+
+                </div>
+
+
+                <div class="full">
+
+                    <div class="notice info">
+
+                        <i class="fa-solid fa-shield-halved"></i>
+
+                        Your application will remain
+                        <strong>Pending Verification</strong>
+                        until an admin reviews your information
+                        and documents.
+
+                    </div>
+
+
+                    <div class="provider-actions">
+
+                        <button
+                            class="btn"
+                            type="submit"
+                            id="submitProviderBtn">
+
+                            Submit for Verification
+
+                        </button>
+
+                        <a
+                            class="btn btn-outline"
+                            href="index.html">
+
+                            Cancel
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </form>
+
+
+            <div id="registerMsg"></div>
+
+        </div>
+
+    </div>
+
+</main>
+
+
+<footer class="site-footer">
+
+    <div class="footer-grid">
+
+        <div class="footer-col footer-about">
+
+            <h3>
+                <i class="fa-solid fa-house-chimney"></i>
+                HRL Services
+            </h3>
+
+            <p>
+                HRL Service Provider is a local services marketplace
+                that helps customers find reliable professionals
+                for everyday needs.
+            </p>
+
+            <div class="social-links">
+
+                <a href="#">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-col">
+
+            <h4>Quick Links</h4>
+
+            <a href="index.html">Home</a>
+            <a href="services.html">All Services</a>
+            <a href="booking.html">Booking</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html">Login</a>
+
+        </div>
+
+
+        <div class="footer-col">
+
+            <h4>Our Services</h4>
+
+            <a href="services/plumbing.html">Plumbing</a>
+            <a href="services/electrician.html">Electrician</a>
+            <a href="services/cleaning.html">Cleaning</a>
+            <a href="services/painter.html">Painter</a>
+            <a href="services/car-repair.html">Car Repair</a>
+            <a href="services/care-services.html">Care Services</a>
+            <a href="services/tutor.html">Tutor</a>
+            <a href="services/it-support.html">IT Support</a>
+
+        </div>
+
+
+        <div class="footer-col">
+
+            <h4>Provider</h4>
+
+            <a href="provider-register.html">
+                Become a Provider
+            </a>
+
+            <a href="provider-login.html">
+                Provider Login
+            </a>
+
+            <a href="provider-dashboard.html">
+                Provider Dashboard
+            </a>
+
+            <a href="verification-status.html">
+                Verification Status
+            </a>
+
+            <h4 class="footer-contact-title">
+                Contact Us
+            </h4>
+
+            <p>
+                <i class="fa-solid fa-phone"></i>
+                +92 300 1234567
+            </p>
+
+            <p>
+                <i class="fa-solid fa-envelope"></i>
+                support@hrlservices.com
+            </p>
+
+            <p>
+                <i class="fa-solid fa-location-dot"></i>
+                Pakistan
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 HRL Services. All Rights Reserved.
+        </p>
+
+        <span>
+            Trusted Local Services • Professional Providers • Easy Booking
+        </span>
+
+    </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+
+
+<script>
+document
+.getElementById("providerRegisterForm")
+.addEventListener("submit", async function(event) {
+
+    event.preventDefault();
+
+    const form = this;
+    const message = document.getElementById("registerMsg");
+    const button = document.getElementById("submitProviderBtn");
+
+    button.disabled = true;
+
+    button.innerHTML =
+        '<i class="fa-solid fa-spinner fa-spin"></i> Submitting...';
+
+    try {
+
+        /* Get Django CSRF cookie */
+        await fetch("/provider/register/", {
+            method: "GET",
+            credentials: "same-origin"
+        });
+
+
+        const formData = new FormData(form);
+
+
+        /* Get CSRF token */
+        function getCookie(name) {
+
+            const cookies = document.cookie.split(";");
+
+            for (let cookie of cookies) {
+
+                cookie = cookie.trim();
+
+                if (cookie.startsWith(name + "=")) {
+
+                    return decodeURIComponent(
+                        cookie.substring(name.length + 1)
+                    );
+
+                }
+
+            }
+
+            return null;
+        }
+
+
+        const csrfToken = getCookie("csrftoken");
+
+
+        /* Send form to Django */
+        const response = await fetch(
+            "/provider/register/",
+            {
+                method: "POST",
+
+                body: formData,
+
+                credentials: "same-origin",
+
+                headers: {
+                    "X-CSRFToken": csrfToken,
+                    "X-Requested-With": "XMLHttpRequest"
+                }
+            }
+        );
+
+
+        const data = await response.json();
+
+
+        /* =========================
+           SUCCESS
+        ========================= */
+
+        if (data.success) {
+
+            message.innerHTML = `
+                <div class="notice success">
+
+                    <i class="fa-solid fa-circle-check"></i>
+
+                    <strong>
+                        Application submitted successfully!
+                    </strong>
+
+                    <br><br>
+
+                    Your application is now
+                    <strong>Pending Verification</strong>.
+
+                    <br><br>
+
+                    Admin will review your information
+                    and documents.
+
+                    <br><br>
+
+                    <a href="verification-status.html">
+                        View Verification Status
+                    </a>
+
+                </div>
+            `;
+
+            form.reset();
+
+        }
+
+
+        /* =========================
+           ERRORS
+        ========================= */
+
+        else {
+
+            let errors = "";
+
+            if (data.errors) {
+
+                Object.keys(data.errors).forEach(function(field) {
+
+                    const fieldErrors = data.errors[field];
+
+                    let errorText = "";
+
+
+                    /*
+                     * Django normally sends errors
+                     * as an array.
+                     */
+                    if (Array.isArray(fieldErrors)) {
+
+                        errorText = fieldErrors.map(function(error) {
+
+                            /*
+                             * If Django sends an object
+                             */
+                            if (typeof error === "object" && error !== null) {
+
+                                return (
+                                    error.message ||
+                                    error.string ||
+                                    error.message_template ||
+                                    JSON.stringify(error)
+                                );
+
+                            }
+
+                            return String(error);
+
+                        }).join(", ");
+
+                    }
+
+
+                    /*
+                     * If error is a single object
+                     */
+                    else if (
+                        typeof fieldErrors === "object" &&
+                        fieldErrors !== null
+                    ) {
+
+                        errorText =
+                            fieldErrors.message ||
+                            fieldErrors.string ||
+                            JSON.stringify(fieldErrors);
+
+                    }
+
+
+                    /*
+                     * If error is already text
+                     */
+                    else {
+
+                        errorText = String(fieldErrors);
+
+                    }
+
+
+                    errors += `
+                        <li>
+                            <strong>${field}</strong>: ${errorText}
+                        </li>
+                    `;
+
+                });
+
+            }
+
+
+            message.innerHTML = `
+                <div class="notice error">
+
+                    <strong>
+                        Please correct the following errors:
+                    </strong>
+
+                    <ul>
+                        ${errors}
+                    </ul>
+
+                </div>
+            `;
+
+        }
+
+    }
+
+
+    catch (error) {
+
+        console.error("Registration Error:", error);
+
+        message.innerHTML = `
+            <div class="notice error">
+
+                <strong>
+                    Something went wrong.
+                </strong>
+
+                <br><br>
+
+                Please make sure Django server is running.
+
+            </div>
+        `;
+
+    }
+
+
+    button.disabled = false;
+
+    button.innerHTML =
+        "Submit for Verification";
+
+});
+</script>
+>
+
+</body>
+</html>

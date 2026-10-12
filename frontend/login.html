@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HRL Services | Login</title><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"></head>
+<body><header class="navbar">
+  <div class="nav-inner">
+    <a class="logo" href="index.html"><i class="fa-solid fa-house-chimney"></i> HRL Services</a>
+    <button class="menu-toggle" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></button>
+    <nav id="navMenu">
+      <a href="index.html">Home</a>
+      <div class="nav-dropdown">
+        <a class="services-link" href="services.html">Services <i class="fa-solid fa-chevron-down"></i></a>
+        <div class="dropdown-menu"><a href="services/plumbing.html"><i class="fa-solid fa-faucet-drip"></i> Plumbing</a>
+<a href="services/electrician.html"><i class="fa-solid fa-bolt"></i> Electrician</a>
+<a href="services/cleaning.html"><i class="fa-solid fa-broom"></i> Cleaning</a>
+<a href="services/painter.html"><i class="fa-solid fa-paint-roller"></i> Painter</a>
+<a href="services/car-repair.html"><i class="fa-solid fa-car"></i> Car Repair</a>
+<a href="services/care-services.html"><i class="fa-solid fa-hand-holding-heart"></i> Care Services</a>
+<a href="services/tutor.html"><i class="fa-solid fa-chalkboard-user"></i> Tutor</a>
+<a href="services/it-support.html"><i class="fa-solid fa-laptop-code"></i> IT Support</a></div>
+      </div>
+      <a href="booking.html">Booking</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html">Login</a>
+      <a class="provider-nav" href="provider-register.html">Become a Provider</a>
+    </nav>
+  </div>
+</header>
+<main><section class="auth-section"><form id="loginForm" class="form-card auth-card"><div class="auth-icon"><i class="fa-solid fa-user"></i></div><h1>Welcome Back</h1><p>Login to your HRL account</p><label>Email<input type="email" required placeholder="Enter email"></label><label>Password<input type="password" required minlength="6" placeholder="Enter password"></label><div class="form-options"><label class="check"><input type="checkbox"> Remember me</label><a href="#">Forgot Password?</a></div><button class="btn" type="submit">Login</button><p id="loginMessage" class="form-message"></p><p class="small-text">Don't have an account? <a href="#" onclick="showSignup(event)">Create one</a></p></form></section></main><footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-col footer-about">
+      <h3><i class="fa-solid fa-house-chimney"></i> HRL Services</h3>
+      <p>HRL Service Provider is a local services marketplace that helps customers find reliable professionals for everyday needs.</p>
+      <div class="social-links"><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a><a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a><a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a></div>
+    </div>
+    <div class="footer-col"><h4>Quick Links</h4><a href="index.html">Home</a><a href="services.html">All Services</a><a href="booking.html">Booking</a><a href="contact.html">Contact</a><a href="login.html">Login</a></div>
+    <div class="footer-col"><h4>Our Services</h4><a href="services/plumbing.html">Plumbing</a><a href="services/electrician.html">Electrician</a><a href="services/cleaning.html">Cleaning</a><a href="services/painter.html">Painter</a><a href="services/car-repair.html">Car Repair</a><a href="services/care-services.html">Care Services</a><a href="services/tutor.html">Tutor</a><a href="services/it-support.html">IT Support</a></div>
+    <div class="footer-col"><h4>Provider</h4><a href="provider-register.html">Become a Provider</a><a href="provider-login.html">Provider Login</a><a href="provider-dashboard.html">Provider Dashboard</a><a href="verification-status.html">Verification Status</a><h4 class="footer-contact-title">Contact Us</h4><p><i class="fa-solid fa-phone"></i> +92 300 1234567</p><p><i class="fa-solid fa-envelope"></i> support@hrlservices.com</p><p><i class="fa-solid fa-location-dot"></i> Pakistan</p></div>
+  </div>
+  <div class="footer-bottom"><p>© 2026 HRL Services. All Rights Reserved.</p><span>Trusted Local Services • Professional Providers • Easy Booking</span></div>
+</footer><script src="script.js"></script></body></html>
